@@ -3,6 +3,7 @@
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
 
+
 <%@include file="css/css.jspf"%>
 
 <body>
