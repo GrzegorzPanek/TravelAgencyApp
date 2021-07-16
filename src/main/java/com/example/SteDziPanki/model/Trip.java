@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-public class Tour {
+public class Trip {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,10 +25,10 @@ public class Tour {
     private Integer adultQuantityPlaces;
     private Integer childrenQuantityPlaces;
 
-    public Tour() {
+    public Trip() {
     }
 
-    public Tour(Integer id, String startPlace, String destination,
+    public Trip(Integer id, String startPlace, String destination,
                 Date departureDate, Date arrivalDate, Double numberOfDays,
                 String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted,
                 Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
