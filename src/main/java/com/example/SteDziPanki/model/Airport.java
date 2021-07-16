@@ -13,7 +13,7 @@ public class Airport {
 
 //   @OneToOne
 
-    public Airport() {
+    public Airport(String name) {
     }
 
     public Airport(Long id, String name) {

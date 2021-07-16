@@ -19,7 +19,7 @@ public class Country {
     @JoinColumn(name = "continent_id")
     private Continent continent;
 
-    public Country() {
+    public Country(String name) {
     }
 
     public Country(Integer id, String name) {

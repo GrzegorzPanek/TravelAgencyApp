@@ -25,7 +25,7 @@ public class Tour {
     private Integer adultQuantityPlaces;
     private Integer childrenQuantityPlaces;
 
-    public Tour() {
+    public Tour(String startPlace, String destination, String tourDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
     public Tour(Integer id, String startPlace, String destination,

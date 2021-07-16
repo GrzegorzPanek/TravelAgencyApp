@@ -16,7 +16,7 @@ public class Shop {
     private String participantData;
     private BigDecimal price;
 
-    public Shop() {
+    public Shop(BigDecimal price, String tour, String participantData) {
     }
 
     public Shop(Integer id, String tour, String participantData, BigDecimal price) {

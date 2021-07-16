@@ -17,7 +17,7 @@ public class Participant {
     private Double passportNumber;
     private Double phoneNumber;
 
-    public Participant() {
+    public Participant(String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
     }
 
     public Participant(Integer id, String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {

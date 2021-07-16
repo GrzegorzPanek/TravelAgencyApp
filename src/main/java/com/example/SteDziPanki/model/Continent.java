@@ -19,7 +19,7 @@ public class Continent {
 
     private Set<Country> countries = new HashSet<>();
 
-    public Continent() {
+    public Continent(String name, Set<Country> countries) {
     }
 
     public Continent(Integer id, String name, Set<Country> countries) {

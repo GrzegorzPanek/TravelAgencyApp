@@ -32,7 +32,7 @@ public class City {
         this.id = id;
     }
 
-    public City() {
+    public City(String name) {
     }
 
     public Integer getId() {

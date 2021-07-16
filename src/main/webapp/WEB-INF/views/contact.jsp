@@ -7,12 +7,12 @@
 
 <body>
 <!-- ======= Header ======= -->
-<%@include file="resources/header.jspf"%>
+<%@include file="dynamic/header.jspf"%>
 
   <main id="main">
 
 
-    <section id="workk" class="portfolio-mf sect-pt4 route" style="background-image: url('<c:url value="resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>')">
+    <section id="workk" class="portfolio-mf sect-pt4 route" style="background-image: url('<c:url value="webapp/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>')">
       <div class="container">
 
                   <p class="subtitle-a">
@@ -83,7 +83,7 @@
   </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<%@include file="resources/footer.jspf"%>
+<%@include file="dynamic/footer.jspf"%>
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
