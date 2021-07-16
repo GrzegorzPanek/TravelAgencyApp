@@ -20,7 +20,7 @@ public class AirportService {
     }
 
     public Airport getAirport(Long id){
-        return AirportRepository.findById(id).orElse(null);
+        return airportRepository.findById(id).orElse(null);
     }
 
     public void addAirport(Airport airport){
