@@ -28,9 +28,11 @@ public class Trip {
     public Trip() {
     }
 
-    public Trip(Integer id, String startPlace, String destination,
-                Date departureDate, Date arrivalDate, Double numberOfDays,
-                String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted,
+    public Trip(Integer id, 
+                String startPlace, 
+                String destination, 
+                Date departureDate, Date arrivalDate, Double numberOfDays, 
+                String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted, 
                 Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
         this.id = id;
         this.startPlace = startPlace;
@@ -44,6 +46,9 @@ public class Trip {
         this.promoted = promoted;
         this.adultQuantityPlaces = adultQuantityPlaces;
         this.childrenQuantityPlaces = childrenQuantityPlaces;
+    }
+
+    public Trip(String startPlace, String destination, String destination1, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
     public Integer getId() {

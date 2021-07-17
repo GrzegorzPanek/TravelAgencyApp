@@ -1,15 +1,16 @@
 package com.example.SteDziPanki.repository;
 
-import com.example.SteDziPanki.model.Tour;
+
+import com.example.SteDziPanki.model.Trip;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface TourRepository extends JpaRepository<Tour, Long> {
+public interface TripRepository extends JpaRepository<Trip, Long> {
 
     @Override
-    List<Tour> findAll();
-    Tour save(Tour entity);
+    List<Trip> findAll();
+    Trip save(Trip entity);
 }
