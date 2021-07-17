@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class Trips {
+public class AddTrip {
 
-    @RequestMapping(value = {"/trips"}, method = RequestMethod.GET)
-    public String getAllinclusive() {
-        return ("trips");
+    @RequestMapping(value = { "/addTrip"}, method = RequestMethod.GET)
+    public String getIndex() {
+        return ("addTrip");
     }
-
 }
+

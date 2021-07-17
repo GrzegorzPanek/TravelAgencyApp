@@ -3,16 +3,15 @@
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
 
-<%@include file="css/css.jspf"%>
-
+<%@include file="../dynamic/css.jspf"%>
 <body>
 <!-- ======= Header ======= -->
-<%@include file="dynamic/header.jspf"%>
+<%@include file="../dynamic/navigationMain.jspf"%>
 
   <main id="main">
 
 
-    <section id="workk" class="portfolio-mf sect-pt4 route" style="background-image: url('<c:url value="webapp/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>')">
+    <section id="workk" class="portfolio-mf sect-pt4 route" style="background-image: url('<c:url value="resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>')">
       <div class="container">
 
                   <p class="subtitle-a">
@@ -68,7 +67,7 @@
                                       </div>
                                       <div class="col-sm-6">
                                           <div class="card-img">
-                                              <img src="assets/img/post-1.jpg" alt="" class="img-fluid">
+                                              <img src='<c:url value="/resources/assets/img/post-1.jpg"/>' alt="" class="img-fluid">
                                           </div>
                                       </div>
                                   </div>
@@ -83,13 +82,14 @@
   </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<%@include file="dynamic/footer.jspf"%>
+<%@include file="../dynamic/footer.jspf"%>
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<%@include file="js/jscrypt.jspf"%>
+<%@include file="../dynamic/jscrypt.jspf"%>
+
 
 </body>
 

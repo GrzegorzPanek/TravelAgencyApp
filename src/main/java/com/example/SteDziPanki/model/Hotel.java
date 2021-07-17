@@ -11,6 +11,7 @@ public class Hotel {
     private String name;
     private String description;
     private Integer standard;
+    private String photo;
 
  //   @OneToOn0e
 
