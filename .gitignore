@@ -1,7 +1,5 @@
 /.idea/
 
-/pom.xml
-
 
 
 HELP.md
@@ -32,8 +30,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
-/pom.xml
-/src/main/resources/application.properties
+
 !**/src/main/**/build/
 !**/src/test/**/build/
 
