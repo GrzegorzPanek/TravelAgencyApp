@@ -208,9 +208,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="../../assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="../../assets/img/mapa.jpg" alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -231,7 +231,7 @@
 
             <div class="col-md-4 col-sm-4">
             <div class="work-box">
-              <a href="<c:url value="/resources/assets/img/work-1.jpg"/>" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="../../assets/img/pexels-daria-shevtsova-1824353.jpg" alt="" class="img-fluid">
                 </div>
@@ -254,9 +254,9 @@
 
             <div class="col-md-4">
             <div class="work-box">
-              <a href="<c:url value="/assets/img/work-1.jpg"/>" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="<c:url value="resources/assets/img/pixels-te-lensfix-1371360.jpg"/> alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/pexels-pixbay-163688.jpg"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">

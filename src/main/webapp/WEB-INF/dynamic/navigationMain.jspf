@@ -1,6 +1,6 @@
 <!-- ======= Header ======= -->
 
-
+<%@ page contentType="text/html; charset=UTF-8" %>
 <header id="header" class="fixed-top bg-dark">
     <div class="container d-flex align-items-center justify-content-between">
 
