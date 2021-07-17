@@ -9,6 +9,6 @@ public class Attraction {
 
     @RequestMapping(value = { "/attraction"}, method = RequestMethod.GET)
     public String getIndex() {
-        return ("attraction");
+        return "attraction";
     }
 }

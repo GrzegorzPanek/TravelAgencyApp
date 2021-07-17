@@ -8,7 +8,5 @@ import java.util.List;
 @Repository
 public interface AirportRepository extends JpaRepository<Airport,Long> {
 
-
-    List<Airport> findAll();
     Airport save(Airport entity);
 }

@@ -11,8 +11,6 @@ public class Airport {
 
     private String name;
 
-//   @OneToOne
-
     public Airport(String name) {
     }
 

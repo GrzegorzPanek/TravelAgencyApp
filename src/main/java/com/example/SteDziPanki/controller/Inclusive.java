@@ -9,7 +9,7 @@ public class Inclusive {
 
     @RequestMapping(value = { "/inclusive"}, method = RequestMethod.GET)
     public String getIndex() {
-        return ("inclusive");
+        return "inclusive";
     }
 
 }

@@ -9,6 +9,6 @@ public class AddAttraction {
 
     @RequestMapping(value = { "/addAttraction"}, method = RequestMethod.GET)
     public String getAttraction() {
-        return ("addAttraction");
+        return "addAttraction";
     }
 }

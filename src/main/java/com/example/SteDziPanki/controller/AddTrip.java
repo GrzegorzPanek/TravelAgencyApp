@@ -9,7 +9,7 @@ public class AddTrip {
 
     @RequestMapping(value = { "/addTrip"}, method = RequestMethod.GET)
     public String getIndex() {
-        return ("addTrip");
+        return "addTrip";
     }
 }
 

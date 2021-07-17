@@ -9,10 +9,10 @@ public class Country {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "country" )
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "country" )
     private Set<City> cities = new HashSet<>();
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -25,16 +25,16 @@ public class Country {
     public Country() {
     }
 
-    public Country(Integer id, String name) {
+    public Country(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

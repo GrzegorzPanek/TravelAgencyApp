@@ -5,6 +5,7 @@ import com.example.SteDziPanki.repository.TripRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TripService {
@@ -19,13 +20,13 @@ public class TripService {
         return tripRepository.findAll();
     }
 
-    public Trip getTour(Long id){
-        return tripRepository.findById(id).orElse(null);
+    public Optional<Trip> getTour(Long id){
+        return tripRepository.findById(id);
     }
 
     public void addTour(Trip trip){
        Trip newTrip = new Trip(
-                 trip.getStartPlace(),
+                trip.getStartPlace(),
                 trip.getDestination(),
                 trip.getDestination(),
                 trip.getDepartureDate(),

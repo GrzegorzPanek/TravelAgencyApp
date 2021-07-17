@@ -9,7 +9,7 @@ public class Contact {
 
     @RequestMapping(value = { "/contact"}, method = RequestMethod.GET)
     public String getIndex() {
-        return ("contact");
+        return "contact";
     }
 
 }

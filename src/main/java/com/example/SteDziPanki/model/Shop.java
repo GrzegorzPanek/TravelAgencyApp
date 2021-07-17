@@ -11,7 +11,7 @@ public class Shop {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String tour;
     private String participantData;
     private BigDecimal price;
@@ -19,7 +19,7 @@ public class Shop {
     public Shop(BigDecimal price, String tour, String participantData) {
     }
 
-    public Shop(Integer id, String tour, String participantData, BigDecimal price) {
+    public Shop(Long id, String tour, String participantData, BigDecimal price) {
         this.id = id;
         this.tour = tour;
         this.participantData = participantData;
@@ -29,11 +29,11 @@ public class Shop {
     public Shop() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

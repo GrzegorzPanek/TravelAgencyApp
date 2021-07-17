@@ -25,9 +25,8 @@ public class HotelService {
 
 
     public void addHotel(Hotel hotel){
-        Hotel newHotel = new Hotel(hotel.getName(),
-                hotel.getDescription(),
-                hotel.getStandard());
+        Hotel newHotel;
+        newHotel = new Hotel(hotel.getName());
         hotelRepository.save(newHotel);
         System.out.println("Adding new hotel on id:"+ newHotel.getId());
     }

@@ -12,28 +12,26 @@ public class Trip {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String startPlace;
     private String destination;
     private Date departureDate;
     private Date arrivalDate;
     private Double numberOfDays;
     private String variant;
-    private BigDecimal childPrice;
-    private BigDecimal AdultPrice;
+    private double childPrice;
+    private double AdultPrice;
     private String promoted;
     private Integer adultQuantityPlaces;
     private Integer childrenQuantityPlaces;
 
-    public Trip() {
+    public Trip(String startPlace, String destination, String tripDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
-    public Trip(Integer id, 
-                String startPlace, 
-                String destination, 
-                Date departureDate, Date arrivalDate, Double numberOfDays, 
-                String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted, 
-                Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
+    public Trip(Long id, String startPlace, String destination,
+                Date departureDate, Date arrivalDate, Double numberOfDays, String variant,
+                double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces,
+                Integer childrenQuantityPlaces) {
         this.id = id;
         this.startPlace = startPlace;
         this.destination = destination;
@@ -48,14 +46,15 @@ public class Trip {
         this.childrenQuantityPlaces = childrenQuantityPlaces;
     }
 
-    public Trip(String startPlace, String destination, String destination1, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, BigDecimal childPrice, BigDecimal adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
+    public Trip() {
+
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -107,19 +106,19 @@ public class Trip {
         this.variant = variant;
     }
 
-    public BigDecimal getChildPrice() {
+    public double getChildPrice() {
         return childPrice;
     }
 
-    public void setChildPrice(BigDecimal childPrice) {
+    public void setChildPrice(double childPrice) {
         this.childPrice = childPrice;
     }
 
-    public BigDecimal getAdultPrice() {
+    public double getAdultPrice() {
         return AdultPrice;
     }
 
-    public void setAdultPrice(BigDecimal adultPrice) {
+    public void setAdultPrice(double adultPrice) {
         AdultPrice = adultPrice;
     }
 

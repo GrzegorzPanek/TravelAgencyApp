@@ -10,7 +10,7 @@ public class Participant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
     private String surname;
     private Integer age;
@@ -23,7 +23,7 @@ public class Participant {
     public Participant() {
     }
 
-    public Participant(Integer id, String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
+    public Participant(Long id, String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -32,11 +32,11 @@ public class Participant {
         this.phoneNumber = phoneNumber;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

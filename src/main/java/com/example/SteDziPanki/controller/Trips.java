@@ -9,7 +9,7 @@ public class Trips {
 
     @RequestMapping(value = {"/trips"}, method = RequestMethod.GET)
     public String getAllinclusive() {
-        return ("trips");
+        return "trips";
     }
 
 }

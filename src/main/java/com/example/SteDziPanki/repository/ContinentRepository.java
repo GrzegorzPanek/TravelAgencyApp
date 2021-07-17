@@ -9,6 +9,5 @@ import java.util.List;
 @Repository
 public interface ContinentRepository extends JpaRepository <Continent, Long> {
 
-    List<Continent> findAll();
     Continent save(Continent entity);
 }

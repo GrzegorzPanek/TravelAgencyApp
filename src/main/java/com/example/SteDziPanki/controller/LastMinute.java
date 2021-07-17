@@ -9,6 +9,6 @@ public class LastMinute {
 
     @RequestMapping(value = { "/lastMinute"}, method = RequestMethod.GET)
     public String getIndex() {
-        return ("lastMinute");
+        return "lastMinute";
     }
 }

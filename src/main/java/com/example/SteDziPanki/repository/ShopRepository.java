@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface ShopRepository extends JpaRepository<Shop,Long> {
 
-    @Override
-    List<Shop> findAll();
+
     Shop save(Shop entity);
 }

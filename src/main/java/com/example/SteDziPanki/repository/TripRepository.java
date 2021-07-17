@@ -10,7 +10,6 @@ import java.util.List;
 @Repository
 public interface TripRepository extends JpaRepository<Trip, Long> {
 
-    @Override
-    List<Trip> findAll();
+
     Trip save(Trip entity);
 }

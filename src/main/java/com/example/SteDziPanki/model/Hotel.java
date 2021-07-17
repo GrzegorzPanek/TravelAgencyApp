@@ -7,33 +7,31 @@ public class Hotel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
     private String description;
-    private Integer standard;
-    private String photo;
 
- //   @OneToOn0e
+
+    //   @OneToOn0e
 
 
     public Hotel() {
     }
 
-    public Hotel(String name, String description, Integer standard) {
-    }
-
-    public Hotel(Integer id, String name, String description, Integer standard) {
+    public Hotel(Long id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.standard = standard;
     }
 
-    public Integer getId() {
+    public Hotel(String name) {
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -51,13 +49,5 @@ public class Hotel {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Integer getStandard() {
-        return standard;
-    }
-
-    public void setStandard(Integer standard) {
-        this.standard = standard;
     }
 }

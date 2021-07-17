@@ -7,7 +7,7 @@ public class City {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -25,23 +25,23 @@ public class City {
         this.name = name;
     }
 
-    public City(Integer id, String name) {
+    public City(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public City(Integer id) {
+    public City(Long id) {
         this.id = id;
     }
 
     public City(String name) {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }

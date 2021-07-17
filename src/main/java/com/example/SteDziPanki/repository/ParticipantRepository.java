@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface ParticipantRepository extends JpaRepository<Participant, Long> {
 
-    @Override
-    List<Participant> findAll();
+
     Participant save(Participant entity);
 }
