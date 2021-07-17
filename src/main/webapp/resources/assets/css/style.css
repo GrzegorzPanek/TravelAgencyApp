@@ -449,12 +449,13 @@ a:hover {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 20px;
+    margin-bottom: 20px;
 }
 
 #header .logo {
   font-size: 28px;
-  margin: 0;
+  margin-bottom:;
   padding: 0;
   font-weight: 600;
   letter-spacing: 1px;
@@ -795,17 +796,37 @@ a:hover {
   color: #cde1f8;
 }
 
+
 .hero-single .breadcrumb a {
   color: #fff;
 }
 
+.title-z {
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.container {
+    margin-top: 10px;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
 }
+
+.container-fluid {
+    margin-top: 50px
+}
+
+.about-mf sect-pt4 route {
+    margin-top: 100px;
+}
+
 
 .about-mf .about-img {
   margin-bottom: 2rem;
@@ -813,6 +834,7 @@ a:hover {
 
 .about-mf .about-img img {
   margin-left: 10px;
+    
 }
 
 @media (min-width: 767px) {
@@ -1622,4 +1644,18 @@ footer .credits a {
   padding: 10px;
   color: black;
   background-color: white;
+}
+
+.row {
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.wybieranie {
+    border: medium solid black;
+}
+
+.main {
+    background-image: url(assets/img/favicon.jpg)
 }

@@ -3,11 +3,10 @@
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
 
-<%@include file="css/css.jspf"%>
 
 <body>
 <!-- ======= Header ======= -->
-<%@include file="resources/header.jspf"%>
+<%@include file="../dynamic/navigationMain.jspf"%>
 
   <main id="main">
 
@@ -83,13 +82,14 @@
   </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<%@include file="resources/footer.jspf"%>
+<%@include file="../dynamic/footer.jspf"%>
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<%@include file="js/jscrypt.jspf"%>
+<%@include file="../dynamic/jscrypt.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 
 </body>
 
