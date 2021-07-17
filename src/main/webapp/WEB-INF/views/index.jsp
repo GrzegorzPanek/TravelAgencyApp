@@ -24,7 +24,7 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: DevFolio - v4.3.0
@@ -233,7 +233,9 @@
             <div class="work-box">
               <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="../../assets/img/pexels-daria-shevtsova-1824353.jpg" alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/pexels-daria-shevtsova-1824353.jpg"/>' alt="" class="img-fluid">
+
+<%--                  pexels-daria-shevtsova-1824353.jpg--%>
                 </div>
               </a>
               <div class="work-content">
@@ -256,7 +258,8 @@
             <div class="work-box">
               <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/pexels-pixbay-163688.jpg"/>' alt="" class="img-fluid">
+<%--                  '<c:url value="/resources/assets/img/pexels-pixbay-163688.jpg"/>'--%>
+                  <img src='<c:url value="/resources/assets/img/pexels-pixabay-163688.jpg"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -426,7 +429,7 @@
                   </div>
                   <div class="col-sm-6">
                   <div class="card-img">
-                <img src="assets/img/post-1.jpg" alt="" class="img-fluid">
+                <img src='<c:url value="/resources/assets/img/post-1.jpg"/>' alt="" class="img-fluid">
               </div>
                   </div>
                 </div>

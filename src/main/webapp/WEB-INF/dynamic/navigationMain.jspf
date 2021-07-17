@@ -20,6 +20,8 @@
                     <ul>
                         <li><a href="#">Ubezpieczenie</a></li>
                         <li><a href='<c:url value="/contact"/>'>Kontakt</a></li>
+                        <li><a href='<c:url value="/login"/>'>Login</a></li>
+                        <li><a href='<c:url value="/register"/>'>Register</a></li>
 
                     </ul>
                 </li>
