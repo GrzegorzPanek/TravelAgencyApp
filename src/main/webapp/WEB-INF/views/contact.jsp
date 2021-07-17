@@ -67,7 +67,7 @@
                                       </div>
                                       <div class="col-sm-6">
                                           <div class="card-img">
-                                              <img src="assets/img/post-1.jpg" alt="" class="img-fluid">
+                                              <img src='<c:url value="/resources/assets/img/post-1.jpg"/>' alt="" class="img-fluid">
                                           </div>
                                       </div>
                                   </div>

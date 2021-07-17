@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Biuro - Index</title>
+  <title>Biuro - Klasa</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
