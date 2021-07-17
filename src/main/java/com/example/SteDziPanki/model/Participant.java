@@ -20,6 +20,9 @@ public class Participant {
     public Participant(String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
     }
 
+    public Participant() {
+    }
+
     public Participant(Integer id, String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
         this.id = id;
         this.name = name;

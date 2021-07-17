@@ -22,6 +22,9 @@ public class Continent {
     public Continent(String name, Set<Country> countries) {
     }
 
+    public Continent() {
+    }
+
     public Continent(Integer id, String name, Set<Country> countries) {
         this.id = id;
         this.name = name;

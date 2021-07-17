@@ -26,6 +26,9 @@ public class Shop {
         this.price = price;
     }
 
+    public Shop() {
+    }
+
     public Integer getId() {
         return id;
     }

@@ -16,6 +16,9 @@ public class Hotel {
  //   @OneToOn0e
 
 
+    public Hotel() {
+    }
+
     public Hotel(String name, String description, Integer standard) {
     }
 

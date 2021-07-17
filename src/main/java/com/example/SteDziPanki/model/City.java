@@ -14,6 +14,8 @@ public class City {
     @JoinColumn(name = "country_id")
     private Country country;
 
+    public City() {
+    }
 
     public String getName() {
         return name;
