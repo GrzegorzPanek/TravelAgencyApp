@@ -24,7 +24,7 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href='<c:url value="/resources/assets/css/style.css"/>' rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio - v4.3.0
@@ -47,7 +47,7 @@
       <!-- ======= Portfolio Section ======= -->
 
 
-    <section id="work" class="portfolio-mf sect-pt4 route" style="background-image: url(/src/main/webApp/resources/assets/img/pexels-daria-sannikova-5587802.jpg)">
+    <section id="work" class="portfolio-mf sect-pt4 route" style="background-image: url(<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/> )">
       <div class="container">
 
                   <p class="subtitle-a">
@@ -208,9 +208,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="../../assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="../../assets/img/mapa.jpg" alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/> ' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -231,9 +231,9 @@
 
             <div class="col-md-4 col-sm-4">
             <div class="work-box">
-              <a href="<c:url value="/resources/assets/img/work-1.jpg"/>" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="../../assets/img/pexels-daria-shevtsova-1824353.jpg" alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/pexels-daria-shevtsova-1824353.jpg"/> ' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -254,9 +254,9 @@
 
             <div class="col-md-4">
             <div class="work-box">
-              <a href="<c:url value="/assets/img/work-1.jpg"/>" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="<c:url value="resources/assets/img/pixels-te-lensfix-1371360.jpg"/> alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/pixels-te-lensfix-1371360.jpg"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -316,7 +316,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src='<c:url value="/resources/assets/img/post-1.jpg"/> ' alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -335,7 +335,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src='<c:url value="/resources/assets/img/post-2.jpg"/> ' alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -354,7 +354,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src='<c:url value="/resources/assets/img/post-3.jpg"/> ' alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -426,7 +426,7 @@
                   </div>
                   <div class="col-sm-6">
                   <div class="card-img">
-                <img src="assets/img/post-1.jpg" alt="" class="img-fluid">
+                <img src='<c:url value="/resources/assets/img/post-1.jpg"/>' alt="" class="img-fluid">
               </div>
                   </div>
                 </div>

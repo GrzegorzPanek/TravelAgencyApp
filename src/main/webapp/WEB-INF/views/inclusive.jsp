@@ -45,7 +45,7 @@
   <!-- ======= Portfolio Section ======= -->
 
 
-  <section id="work" class="portfolio-mf sect-pt4 route" style="background-image: url(assets/img/pexels-daria-sannikova-5587802.jpg)">
+  <section id="work" class="portfolio-mf sect-pt4 route" style="background-image: url(<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>)">
     <div class="container">
 
       <p class="subtitle-a">
@@ -327,7 +327,7 @@
   </section><!-- End Portfolio Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(<c:url value="/resources/assets/img/overlay-bg.jpg"/>)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">

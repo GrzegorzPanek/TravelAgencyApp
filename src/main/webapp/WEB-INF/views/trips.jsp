@@ -43,7 +43,7 @@
 
 
   <main id="main" class="main">
-    <img src="assets/img/pexels-pixabay-163688.jpg" class="bg" alt="Best Trips in the world" />
+    <img src='<c:url value="/resources/assets/img/pexels-pixabay-163688.jpg"/> ' class="bg" alt="Best Trips in the world" />
     <div class="search-container">
       <div>
         <h2 class="search-header">ODKRYWAJ ŚWIAT Z KLASĄ</h2>
@@ -60,9 +60,9 @@
       <div class="row">
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="assets/img/pexels-daria-sannikova-5587802.jpg" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
@@ -83,9 +83,9 @@
 
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="assets/img/pexels-daria-sannikova-5587802.jpg" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
@@ -106,9 +106,9 @@
 
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="assets/img/pexels-daria-sannikova-5587802.jpg" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
@@ -129,9 +129,9 @@
 
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="assets/img/pexels-daria-sannikova-5587802.jpg" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
@@ -152,9 +152,9 @@
 
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="assets/img/pexels-daria-sannikova-5587802.jpg" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
@@ -175,9 +175,9 @@
 
         <div class="col-md-2">
           <div class="work-box">
-            <a href="assets/img/pexels-daria-sannikova-5587802.jpg" >
+            <a href="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" >
               <div class="work-img">
-                <img src="<c:url value="../assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
+                <img src="<c:url value="/resources/assets/img/pexels-daria-sannikova-5587802.jpg"/>" alt="" class="img-fluid">
               </div>
             </a>
             <div class="work-content">
