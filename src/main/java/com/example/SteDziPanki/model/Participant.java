@@ -14,11 +14,12 @@ public class Participant {
     private Double passportNumber;
     private Double phoneNumber;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Trip trip;
 
     public Participant(String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
     }
+
 
     public Participant() {
     }

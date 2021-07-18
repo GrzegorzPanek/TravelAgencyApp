@@ -13,7 +13,6 @@ public class Airport {
     private String name;
 
     @ManyToOne
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private City city;
 
     @OneToMany(fetch = FetchType.LAZY)
