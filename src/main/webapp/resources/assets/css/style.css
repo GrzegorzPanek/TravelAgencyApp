@@ -455,7 +455,7 @@ a:hover {
 
 #header .logo {
     font-size: 28px;
-    margin-bottom:;
+    margin-bottom:10px;
     padding: 0;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1499,13 +1499,14 @@ footer .credits a {
 .hotel-element__action-button {
     background: none;
     border: none;
+}
 
-&
-:hover {
+
+.hover {
     cursor: pointer;
 }
 
-}
+
 
 .hotel-element__action-button__see_offer {
     align-items: center;
@@ -1570,7 +1571,7 @@ footer .credits a {
 .input-container {
     background-color: hsla(0, 0%, 100%, .7);
     border-radius: 5px;
-    box-shadow: 0 2px 8px 0 rgb(35 35 35 / 15%);
+    box-shadow: 0 2px 8px 0 rgb(35 35 35);
     padding: 20px 15px 20px 17px;
     display: flex;
     justify-content: space-around;
@@ -1665,6 +1666,4 @@ footer .credits a {
     border: medium solid black;
 }
 
-.main {
-    background-image: url(assets/img/favicon.jpg)
-}
+
