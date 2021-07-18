@@ -8,7 +8,6 @@ public class Airport {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
 
     public Airport(String name) {
