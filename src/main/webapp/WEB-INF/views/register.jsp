@@ -26,10 +26,12 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
-
+<br>
+<br>
+<br>
 <body class="bg-gradient-primary">
 
-  <div class="container">
+  <div class="container min-height">
 
     <%@include file="../dynamic/navigationMain.jspf"%>
 
@@ -44,24 +46,37 @@
                 <h1 class="h4 text-gray-900 mb-4">Utwórz konto!</h1>
               </div>
               <form class="user">
-                <div class="form-group row">
+                <div class="form-group ">
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Imię">
                   </div>
-                  <div class="col-sm-6">
+
+                  <p>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Nazwisko">
                   </div>
+                </p>
+
                 </div>
+                <p>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="adres Email">
                 </div>
-                <div class="form-group row">
+                </p>
+
+                <p>
+                <div class="form-group ">
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Hasło">
                   </div>
-                  <div class="col-sm-6">
+                </p>
+
+                <p>
+                  <div class="col-sm-6 mb-3 mb-sm-0">
                     <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Powtórz ">
                   </div>
+                </p>
+
                 </div>
                 <a href="login.jsp" class="btn btn-primary btn-user btn-block">
                   Rejestruj
@@ -85,6 +100,7 @@
 
   <!-- Core plugin JavaScript-->
 
+<br>
 
   <!-- Custom scripts for all pages-->
 
