@@ -12,12 +12,15 @@ public class Country {
     private Long id;
     private String name;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "country" )
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<City> cities = new HashSet<>();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "continent_id")
     private Continent continent;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Trip> tripSet = new HashSet<>();
+
 
     public Country(String name) {
     }

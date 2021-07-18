@@ -1,6 +1,8 @@
 package com.example.SteDziPanki.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Airport {
@@ -8,8 +10,14 @@ public class Airport {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
+
+    @ManyToOne
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private City city;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Trip> trip = new HashSet<>();
 
     public Airport(String name) {
     }

@@ -1,9 +1,6 @@
 package com.example.SteDziPanki.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Participant {
@@ -16,6 +13,9 @@ public class Participant {
     private Integer age;
     private Double passportNumber;
     private Double phoneNumber;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    private Trip trip;
 
     public Participant(String name, String surname, Integer age, Double passportNumber, Double phoneNumber) {
     }

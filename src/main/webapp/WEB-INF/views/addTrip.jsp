@@ -50,6 +50,8 @@
         <section id="about" class="about-mf sect-pt4 route">
 
                     <!-- Begin Page Content -->
+
+
                     <div class="container-fluid">
 
                         <!-- Content Row -->
@@ -58,7 +60,7 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <div class="form-group row">
-                                            <label for="firstName" class="col-2 col-form-label">Kraj</label>
+                                            <label for="firstName" class="col-2 col-form-label">Start</label>
                                             <div class="col-10">
                                                 <input class="form-control" type="text" value="Kraj">
                                             </div>

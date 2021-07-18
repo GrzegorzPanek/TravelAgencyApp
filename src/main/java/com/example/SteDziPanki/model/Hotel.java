@@ -1,6 +1,8 @@
 package com.example.SteDziPanki.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Hotel {
@@ -11,9 +13,11 @@ public class Hotel {
     private String name;
     private String description;
 
+    @ManyToOne
+    private City city;
 
-    //   @OneToOn0e
-
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Trip> tripsHotel = new HashSet<>();
 
     public Hotel() {
     }
