@@ -37,6 +37,7 @@ public class TripService {
                 trip.getAdultPrice(),
                 trip.getPromoted(),
                 trip.getAdultQuantityPlaces(),
+                trip.getPicture(),
                 trip.getChildrenQuantityPlaces());
         tripRepository.save(newTrip);
         System.out.println("Adding new trip on id:" + newTrip.getId());

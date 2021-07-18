@@ -13,15 +13,18 @@ public class Trip {
     private Long id;
     private String startPlace;
     private String destination;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date departureDate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date arrivalDate;
     private Double numberOfDays;
     private String variant;
     private double childPrice;
-    private double AdultPrice;
+    private double adultPrice;
     private String promoted;
     private Integer adultQuantityPlaces;
     private Integer childrenQuantityPlaces;
+    private String picture;
 
     @OneToMany(fetch = FetchType.LAZY)
     private Set<Participant> participants = new HashSet<>();
@@ -41,10 +44,7 @@ public class Trip {
     public Trip(String startPlace, String destination, String tripDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
-    public Trip(Long id, String startPlace, String destination,
-                Date departureDate, Date arrivalDate, Double numberOfDays, String variant,
-                double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces,
-                Integer childrenQuantityPlaces) {
+    public Trip(Long id, String startPlace, String destination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture) {
         this.id = id;
         this.startPlace = startPlace;
         this.destination = destination;
@@ -53,14 +53,14 @@ public class Trip {
         this.numberOfDays = numberOfDays;
         this.variant = variant;
         this.childPrice = childPrice;
-        AdultPrice = adultPrice;
+        this.adultPrice = adultPrice;
         this.promoted = promoted;
         this.adultQuantityPlaces = adultQuantityPlaces;
         this.childrenQuantityPlaces = childrenQuantityPlaces;
+        this.picture = picture;
     }
 
-    public Trip() {
-
+    public Trip(String startPlace, String destination, String destination1, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, String picture, Integer childrenQuantityPlaces) {
     }
 
     public Long getId() {
@@ -128,11 +128,11 @@ public class Trip {
     }
 
     public double getAdultPrice() {
-        return AdultPrice;
+        return adultPrice;
     }
 
     public void setAdultPrice(double adultPrice) {
-        AdultPrice = adultPrice;
+        this.adultPrice = adultPrice;
     }
 
     public String getPromoted() {
@@ -157,5 +157,13 @@ public class Trip {
 
     public void setChildrenQuantityPlaces(Integer childrenQuantityPlaces) {
         this.childrenQuantityPlaces = childrenQuantityPlaces;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 }
