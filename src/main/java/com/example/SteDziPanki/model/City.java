@@ -1,6 +1,8 @@
 package com.example.SteDziPanki.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class City {
@@ -10,11 +12,51 @@ public class City {
     private Long id;
     private String name;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "country_id")
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Trip> trips = new HashSet<>();
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Airport> airports = new HashSet<>();
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Hotel> hotels = new HashSet<>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
     private Country country;
 
     public City() {
+    }
+
+    public Set<Trip> getTrips() {
+        return trips;
+    }
+
+    public void setTrips(Set<Trip> trips) {
+        this.trips = trips;
+    }
+
+    public Set<Airport> getAirports() {
+        return airports;
+    }
+
+    public void setAirports(Set<Airport> airports) {
+        this.airports = airports;
+    }
+
+    public Set<Hotel> getHotels() {
+        return hotels;
+    }
+
+    public void setHotels(Set<Hotel> hotels) {
+        this.hotels = hotels;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
     public String getName() {

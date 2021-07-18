@@ -25,7 +25,7 @@ public class ShopService {
 
     public void addShop(Shop shop){
         Shop newShop =  new Shop(shop.getPrice(),
-                shop.getTour(),
+                shop.getTrip(),
                 shop.getParticipantData());
         shopRepository.save(newShop);
         System.out.println("Adding new shop on id:" + newShop.getId());

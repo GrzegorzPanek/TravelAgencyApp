@@ -2,12 +2,10 @@ package com.example.SteDziPanki.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.math.BigDecimal;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Trip {
@@ -30,7 +28,22 @@ public class Trip {
     private Integer childrenQuantityPlaces;
     private String picture;
 
-    public Trip() {
+    @OneToMany(fetch = FetchType.LAZY)
+    private Set<Participant> participants = new HashSet<>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private City city;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Hotel hotel;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Country country;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Airport airport;
+
+    public Trip(String startPlace, String destination, String tripDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
     public Trip(Long id, String startPlace, String destination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture) {
@@ -50,6 +63,10 @@ public class Trip {
     }
 
     public Trip(String startPlace, String destination, String destination1, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, String picture, Integer childrenQuantityPlaces) {
+    }
+
+    public Trip() {
+
     }
 
     public Long getId() {
