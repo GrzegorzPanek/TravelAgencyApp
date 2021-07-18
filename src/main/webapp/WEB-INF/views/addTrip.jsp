@@ -46,7 +46,7 @@
                     
                 
                     <!-- End of Topbar -->
-
+   <form name="send" method="post" action='<c:url value="/addTrip"/>'>
         <section id="about" class="about-mf sect-pt4 route">
 
                     <!-- Begin Page Content -->
@@ -58,83 +58,98 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <div class="form-group row">
-                                            <label for="firstName" class="col-2 col-form-label">Kraj</label>
+                                            <label  class="col-2 col-form-label">Skąd(miasto,lotnisko)</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Kraj">
+                                                <input class="form-control" type="text" name="startPlace" placeholder="Skąd(miasto,lotnisko)">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="lastName" class="col-2 col-form-label">Miasto</label>
+                                            <label  class="col-2 col-form-label">Dokąd(Miasto,hotel,lotnikso)</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Miasto">
+                                                <input class="form-control" type="text" name="destination" placeholder="Dokąd(Miasto,hotel,lotnikso)">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="github" class="col-2 col-form-label">Hotel</label>
+                                            <label  class="col-2 col-form-label">Data wyzjazdy</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Hotel">
+                                                <input class="form-control" name="departureDate" type="date" max="3000-12-31"
+                                                       min="<fmt:formatDate pattern = "yyyy-MM-dd"
+                                    value ="${now}"/>">
                                             </div>
                                         </div>
 
                                        <div class="form-group row">
-                                            <label for="github" class="col-2 col-form-label">Ilość gwiazdek</label>
+                                            <label  class="col-2 col-form-label">Data powrotu</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Ilość gwiazdek">
+                                                <input class="form-control" name="arrivalDate" type="date" max="3000-12-31"
+                                                       min="<fmt:formatDate pattern = "yyyy-MM-dd"
+                                    value ="${now}"/>">
                                             </div>
                                         </div>
-                                        
+
                                          <div class="form-group row">
-                                            <label for="Price" class="col-2 col-form-label">Cena za dobe</label>
+                                            <label  class="col-2 col-form-label">Ilkość dni</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Cena">
+                                                <input class="form-control" type="text" name="numberOfDays" placeholder="Ilkość dni">
                                             </div>
                                         </div>
-                                        
+
                                          <div class="form-group row">
-                                            <label for="priceForChildren" class="col-2 col-form-label">Cena dla dziecka</label>
+                                            <label  class="col-2 col-form-label">Typ</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Cena dla dziecka">
+                                                <input class="form-control" type="text" name="variant" placeholder="Typ:(BB, HB, FB, AL)">
                                             </div>
                                         </div>
-                                        
+
                                          <div class="form-group row">
-                                            <label for="wylot" class="col-2 col-form-label">Lotnisko</label>
+                                            <label  class="col-2 col-form-label">Cena za dorosłego</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Wylot">
+                                                <input class="form-control" type="text" name="adultPrice" placeholder="Cena za dorosłego">
                                             </div>
                                         </div>
-                                        
-                                    
-                                        
+
+
+
                                         <div class="form-group row">
-                                            <label for="days" class="col-2 col-form-label">Czas pobytu</label>
+                                            <label  class="col-2 col-form-label">Cena za dziecko</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Czas pobytu">
+                                                <input class="form-control" type="text" name="childPrice" placeholder="uzupełnij czas pobytu">
                                             </div>
                                         </div>
-                                        
+
                                     <div class="form-group row">
-                                            <label for="atrakcje" class="col-2 col-form-label">Atrakcje</label>
+                                            <label  class="col-2 col-form-label">Promowania</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="atrakcje">
+                                                <input class="form-control" type="text" name="promoted" placeholder="Promowania">
                                             </div>
                                         </div>
-                                        
-                                         <div class="form-group row">
-                                            <label for="lastName" class="col-2 col-form-label">Zdjęcie</label>
-                                            <div class="col-10">
-                                                <input class="form-control" type="text" value="link">
-                                            </div>
-                                        </div>
-                                        
+
+
                                         <div class="form-group row">
-                                            <label for="allInclusive" class="col-2 col-form-label">All Inclusive</label>
+                                            <label  class="col-2 col-form-label">Ilość miejsc dorosłych</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="TAK lub NIE">
+                                                <input class="form-control" type="text" name="adultQuantityPlaces" placeholder="Ilość miejsc dorosłych">
                                             </div>
                                         </div>
-                                       
+
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Ilość miejsc dzieci</label>
+                                            <div class="col-10">
+                                                <input class="form-control" type="text" name="childrenQuantityPlaces" placeholder="Ilość miejsc dzieci">
+                                            </div>
+                                        </div>
+
+                                         <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Zdjęcie</label>
+                                            <div class="col-10">
+                                                <input class="form-control" type="text" name="picture" placeholder="Dodaj zdjęcie">
+                                            </div>
+                                        </div>
+
+
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -222,7 +237,7 @@
             </div>
         </div>
     </div>
-
+   </form>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
