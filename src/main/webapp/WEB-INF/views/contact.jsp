@@ -80,6 +80,7 @@
       </div>
     </section>
   </main><!-- End #main -->
+<br>
 
 <!-- ======= Footer ======= -->
 <%@include file="../dynamic/footer.jspf"%>
