@@ -50,7 +50,7 @@
         <section id="about" class="about-mf sect-pt4 route">
 
                     <!-- Begin Page Content -->
-                    <div class="container-fluid">
+                    <form class="container-fluid">
 
                         <!-- Content Row -->
                         <div class="row">
@@ -89,9 +89,9 @@
                                         </div>
 
                                          <div class="form-group row">
-                                            <label  class="col-2 col-form-label">Ilkość dni</label>
+                                            <label  class="col-2 col-form-label">Ilość dni</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" name="numberOfDays" placeholder="Ilkość dni">
+                                                <input class="form-control" type="text" name="numberOfDays" placeholder="Ilość dni">
                                             </div>
                                         </div>
 
@@ -114,14 +114,14 @@
                                         <div class="form-group row">
                                             <label  class="col-2 col-form-label">Cena za dziecko</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" name="childPrice" placeholder="uzupełnij czas pobytu">
+                                                <input class="form-control" type="text" name="childPrice" placeholder="Cena za dziecko">
                                             </div>
                                         </div>
 
                                     <div class="form-group row">
                                             <label  class="col-2 col-form-label">Promowania</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" name="promoted" placeholder="Promowania">
+                                                <input class="form-control" type="text" name="promoted" placeholder="true or false">
                                             </div>
                                         </div>
 
@@ -147,6 +147,20 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Last Minute</label>
+                                            <div class="col-10">
+                                                <input class="form-control" type="text" name="lastMinute" placeholder="true or false">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">All Inlusive</label>
+                                            <div class="col-10">
+                                                <input class="form-control" type="text" name="allInclusive" placeholder="true or false">
+                                            </div>
+                                        </div>
+
 
                                         </div>
 
@@ -154,6 +168,7 @@
                                     </div>
                                 </div>
                             </div>
+
 
 
 

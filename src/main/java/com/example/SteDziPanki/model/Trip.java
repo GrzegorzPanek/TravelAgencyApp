@@ -23,10 +23,12 @@ public class Trip {
     private String variant;
     private double childPrice;
     private double adultPrice;
-    private String promoted;
+    private Boolean promoted;
     private Integer adultQuantityPlaces;
     private Integer childrenQuantityPlaces;
     private String picture;
+    private Boolean lastMinute;
+    private Boolean allInclusive;
 
     @OneToMany(fetch = FetchType.LAZY)
     private Set<Participant> participants = new HashSet<>();
@@ -46,7 +48,9 @@ public class Trip {
     public Trip(String startPlace, String destination, String tripDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
-    public Trip(Long id, String startPlace, String destination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture) {
+    public Trip(Long id, String startPlace, String destination, Date departureDate, Date arrivalDate,
+                Double numberOfDays, String variant, double childPrice, double adultPrice, Boolean promoted,
+                Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture, Boolean lastMinute, Boolean allInclusive) {
         this.id = id;
         this.startPlace = startPlace;
         this.destination = destination;
@@ -60,13 +64,15 @@ public class Trip {
         this.adultQuantityPlaces = adultQuantityPlaces;
         this.childrenQuantityPlaces = childrenQuantityPlaces;
         this.picture = picture;
-    }
-
-    public Trip(String startPlace, String destination, String destination1, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, String picture, Integer childrenQuantityPlaces) {
+        this.lastMinute = lastMinute;
+        this.allInclusive = allInclusive;
     }
 
     public Trip() {
 
+    }
+
+    public Trip(String startPlace, String destination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, Boolean promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture, Boolean lastMinute, Boolean allInclusive) {
     }
 
     public Long getId() {
@@ -141,11 +147,11 @@ public class Trip {
         this.adultPrice = adultPrice;
     }
 
-    public String getPromoted() {
+    public Boolean getPromoted() {
         return promoted;
     }
 
-    public void setPromoted(String promoted) {
+    public void setPromoted(Boolean promoted) {
         this.promoted = promoted;
     }
 
@@ -171,5 +177,21 @@ public class Trip {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public Boolean getLastMinute() {
+        return lastMinute;
+    }
+
+    public void setLastMinute(Boolean lastMinute) {
+        this.lastMinute = lastMinute;
+    }
+
+    public Boolean  getAllInclusive() {
+        return allInclusive;
+    }
+
+    public void setAllInclusive(Boolean allInclusive) {
+        this.allInclusive = allInclusive;
     }
 }
