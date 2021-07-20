@@ -21,10 +21,7 @@ public class Attractions {
         this.attractionRepository = attractionRepository;
     }
 
-//    @RequestMapping(value = { "/attraction"}, method = RequestMethod.GET)
-//    public String getIndex() {
-//        return "attractions";
-//    }
+
 
     @RequestMapping(value = {"/addAttraction"}, method = RequestMethod.POST)
     public RedirectView postAddNewAttraction(@ModelAttribute Attraction newAttraction) {

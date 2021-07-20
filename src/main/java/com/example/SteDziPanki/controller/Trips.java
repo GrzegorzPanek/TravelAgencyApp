@@ -18,10 +18,7 @@ public class Trips {
         this.tripRepository = tripRepository;
     }
 
-//    @RequestMapping(value = {"/trips"}, method = RequestMethod.GET)
-//    public String getIndex() {
-//        return "trips";
-//    }
+
 
     @RequestMapping(value = {"/trips"}, method = RequestMethod.GET)
     public String getTrips(Model model) {
