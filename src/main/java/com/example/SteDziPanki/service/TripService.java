@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class TripService {
+
 
     private final TripRepository tripRepository;
 
@@ -28,7 +30,6 @@ public class TripService {
        Trip newTrip = new Trip(
                 trip.getStartPlace(),
                 trip.getDestination(),
-                trip.getDestination(),
                 trip.getDepartureDate(),
                 trip.getArrivalDate(),
                 trip.getNumberOfDays(),
@@ -37,9 +38,29 @@ public class TripService {
                 trip.getAdultPrice(),
                 trip.getPromoted(),
                 trip.getAdultQuantityPlaces(),
-                trip.getPicture(),
-                trip.getChildrenQuantityPlaces());
+               trip.getChildrenQuantityPlaces(),
+               trip.getPicture(),
+               trip.getLastMinute(),
+                trip.getAllInclusive());
         tripRepository.save(newTrip);
         System.out.println("Adding new trip on id:" + newTrip.getId());
+    }
+
+    public List <Trip> findByAllInclusive(Boolean status) {
+        List<Trip> list = tripRepository.findAll();
+        return list.stream()
+                .filter(o -> o.getAllInclusive().equals(status))
+                .collect(Collectors.toList());
+    }
+
+    public List <Trip> findByLastMinute(Boolean status) {
+        List<Trip> list = tripRepository.findAll();
+        return list.stream()
+                .filter(o -> o.getLastMinute().equals(status))
+                .collect(Collectors.toList());
+    }
+
+    public Optional<Trip> getTripsById(Long id){
+        return tripRepository.findById(id);
     }
 }
