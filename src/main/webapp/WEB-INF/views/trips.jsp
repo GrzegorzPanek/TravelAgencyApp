@@ -65,9 +65,9 @@
         <c:forEach items="${items}" var="item">
           <div class="col-md-2">
             <div class="work-box">
-              <a href='<c:url value="${item.picture}"/>' >
+              <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
                 <div class="work-img">
-                  <img src='<c:url value="${item.picture}"/>' alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
