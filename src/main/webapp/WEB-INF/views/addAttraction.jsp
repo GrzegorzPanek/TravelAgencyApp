@@ -45,7 +45,7 @@
                     
                 
                     <!-- End of Topbar -->
-
+   <form name="send" method="post" action='<c:url value="/addAttraction"/>'>
         <section id="about" class="about-mf sect-pt4 route">
 
                     <!-- Begin Page Content -->
@@ -57,37 +57,37 @@
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
                                         <div class="form-group row">
-                                            <label for="firstName" class="col-2 col-form-label">Kraj</label>
+                                            <label  class="col-2 col-form-label">Nazwa</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Kraj">
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                            <label for="lastName" class="col-2 col-form-label">Miasto</label>
-                                            <div class="col-10">
-                                                <input class="form-control" type="text" value="Miasto">
+                                                <input class="form-control" type="text" name="name" placeholder="Nazwa Atrakcji">
                                             </div>
                                         </div>
 
-                                        
+
                                         <div class="form-group row">
-                                            <label for="lastName" class="col-2 col-form-label">Cena</label>
+                                            <label  class="col-2 col-form-label">Cena</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Cena">
+                                                <input class="form-control" type="text" name="price" placeholder="Wpisz cenę">
                                             </div>
                                         </div>
-                                        
+
+
                                         <div class="form-group row">
-                                            <label for="lastName" class="col-2 col-form-label">Rodzaj Atrakcji</label>
+                                            <label  class="col-2 col-form-label">Opis:</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" value="Rodzaj atrakcji">
+                                                <input class="form-control" type="text" name="description" placeholder="Wpisz opis atrakcji">
                                             </div>
                                         </div>
-                                       
-                                                                              
-                            
-                                      
+
+                                        <div class="form-group row">
+                                            <label  class="col-2 col-form-label">Zdjęcie</label>
+                                            <div class="col-10">
+                                                <input class="form-control" type="text" name="picture" placeholder="Dodaj zdjęcie">
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
 
-
+   </form>
 
 
 

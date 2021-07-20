@@ -996,6 +996,9 @@ a:hover {
 .w-title {
     font-size: 1.2rem;
 }
+.w-title2{
+    font-size: 0.8rem;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1515,9 +1518,9 @@ footer .credits a {
     color: #fff;
     cursor: pointer;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
-    height: 60px;
+    height: 50px;
     justify-content: center;
     outline: none;
     padding: 0 16px;

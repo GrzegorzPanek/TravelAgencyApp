@@ -16,11 +16,11 @@ public class TripService {
         this.tripRepository = tourRepository;
     }
 
-    public List<Trip> getTourList(){
+    public List<Trip> getTripList(){
         return tripRepository.findAll();
     }
 
-    public Optional<Trip> getTour(Long id){
+    public Optional<Trip> getTrip(Long id){
         return tripRepository.findById(id);
     }
 
