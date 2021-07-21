@@ -1,9 +1,6 @@
 package com.example.SteDziPanki.model;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,7 +14,6 @@ public class UserEntity extends BaseEntity{
     private Set<String> role = new HashSet<>();
 
     public UserEntity(){
-
     }
 
     public UserEntity(String username, String password, Set<String> role) {

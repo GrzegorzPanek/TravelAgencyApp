@@ -9,7 +9,11 @@ public class Login {
 
     @RequestMapping(value = { "/login"}, method = RequestMethod.GET)
     public String getIndex() {
-        return "login";
+        return "/login";
+    }
+    @RequestMapping(value = {"/login"}, method = RequestMethod.POST)
+    public String postLogin(){
+        return "/login";
     }
 
 }

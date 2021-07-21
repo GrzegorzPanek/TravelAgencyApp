@@ -1,8 +1,6 @@
 package com.example.SteDziPanki.model;
 
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
+import javax.persistence.*;
 import java.util.UUID;
 
 @MappedSuperclass
@@ -12,6 +10,7 @@ public class BaseEntity {
     private Long id;
     private String uuid = UUID.randomUUID().toString();
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Version
     private long version;
 
