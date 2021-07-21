@@ -7,6 +7,7 @@ import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface TripRepository extends JpaRepository<Trip, Long> {
@@ -14,4 +15,5 @@ public interface TripRepository extends JpaRepository<Trip, Long> {
 
     Trip save(Trip entity);
    List<Trip> findAll();
+   Optional<Trip> findByAllInclusive(String status);
 }

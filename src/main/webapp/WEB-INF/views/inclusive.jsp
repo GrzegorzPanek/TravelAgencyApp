@@ -187,149 +187,53 @@
   <section id="work" class="portfolio-mf sect-pt4 route">
 
 
+    <div class="trips-list">
+      <h2>Aktualne Wycieczki All Inclusive:</h2>
+      <div class="row">
 
-    <div class="container">
-      <div class="row hotel-element">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
+
+
+        <c:forEach items="${items}" var="item">
+          <div class="col-md-2">
+            <div class="work-box">
+              <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
                 <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
                 </div>
               </a>
-            </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
+                    <div class="w-more">
+                      <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
 
-            <div class="col-sm-5 hotel-element__data">
-              <h3>Titan Select</h3>
-              <p class="data__localization">Turcja / Riwiera Turecka / Konakli</p>
-              <p class="data data__date">20.10.2021 - 27.10.2021 (7 noclegów)</p>
-              <p class="data">All Inclusive</p>
-              <p class="data data__info">strefa spa z saunami i łaźnią turecką</p>
-            </div>
-
-            <div class="col-sm-3 hotel-element__actions">
-              <div class="hotel-element__actions-value">
-                <h2>1727 zł</h2>
-                <label>osoba</label>
-              </div>
-              <button type="button" class="hotel-element__action-button__see_offer">Zobacz ofertę</button>
-              <button type="button" class="hotel-element__action-button">Inne ceny i terminy</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-      
-      
-      <div class="container">
-      <div class="row hotel-element">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
+                  </div>
                 </div>
-              </a>
-            </div>
-
-            <div class="col-sm-5 hotel-element__data">
-              <h3>Titan Select</h3>
-              <p class="data__localization">Turcja / Riwiera Turecka / Konakli</p>
-              <p class="data data__date">20.10.2021 - 27.10.2021 (7 noclegów)</p>
-              <p class="data">All Inclusive</p>
-              <p class="data data__info">strefa spa z saunami i łaźnią turecką</p>
-            </div>
-
-            <div class="col-sm-3 hotel-element__actions">
-              <div class="hotel-element__actions-value">
-                <h2>1727 zł</h2>
-                <label>osoba</label>
               </div>
-              <button type="button" class="hotel-element__action-button__see_offer">Zobacz ofertę</button>
-              <button type="button" class="hotel-element__action-button">Inne ceny i terminy</button>
             </div>
-
           </div>
-        </div>
+        </c:forEach>
       </div>
     </div>
+
+    </div>
+
+
+
       
-      <div class="container">
-      <div class="row hotel-element">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
 
-            <div class="col-sm-5 hotel-element__data">
-              <h3>Titan Select</h3>
-              <p class="data__localization">Turcja / Riwiera Turecka / Konakli</p>
-              <p class="data data__date">20.10.2021 - 27.10.2021 (7 noclegów)</p>
-              <p class="data">All Inclusive</p>
-              <p class="data data__info">strefa spa z saunami i łaźnią turecką</p>
-            </div>
-
-            <div class="col-sm-3 hotel-element__actions">
-              <div class="hotel-element__actions-value">
-                <h2>1727 zł</h2>
-                <label>osoba</label>
-              </div>
-              <button type="button" class="hotel-element__action-button__see_offer">Zobacz ofertę</button>
-              <button type="button" class="hotel-element__action-button">Inne ceny i terminy</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-      
-      <div class="container">
-      <div class="row hotel-element">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-5 hotel-element__data">
-              <h3>Titan Select</h3>
-              <p class="data__localization">Turcja / Riwiera Turecka / Konakli</p>
-              <p class="data data__date">20.10.2021 - 27.10.2021 (7 noclegów)</p>
-              <p class="data">All Inclusive</p>
-              <p class="data data__info">strefa spa z saunami i łaźnią turecką</p>
-            </div>
-
-            <div class="col-sm-3 hotel-element__actions">
-              <div class="hotel-element__actions-value">
-                <h2>1727 zł</h2>
-                <label>osoba</label>
-              </div>
-              <button type="button" class="hotel-element__action-button__see_offer">Zobacz ofertę</button>
-              <button type="button" class="hotel-element__action-button">Inne ceny i terminy</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
   </section><!-- End Portfolio Section -->
 
   <!-- ======= Contact Section ======= -->
 
   </div>
   </section>
+
+
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
