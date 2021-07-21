@@ -15,29 +15,18 @@
   <meta name="author" content="">
 
   <%@include file="../dynamic/css.jspf"%>
-
   <title>Biuro - login</title>
-
   <!-- Custom fonts for this template-->
-
-
   <!-- Custom styles for this template-->
-
-
 </head>
-
-<body class="bg-gradient-primary">
-
+<body class="bg-gradient-primary"
   <div class="container min-height" >
-
     <%@include file="../dynamic/navigationMain.jspf"%>
-
     <br>
     <br>
     <br>
     <!-- Outer Row -->
     <div class="row justify-content-center">
-
       <div class="col-xl-12 col-lg-12 col-md-12">
 
         <div class="card o-hidden border-0 shadow-lg my-5">
@@ -52,7 +41,7 @@
                   </div>
                   <form class="user">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Wprowadź swój adres Email...">
+                      <input type="nick" class="form-control form-control-user" id="formGroupExampleInput" placeholder="Wprowadź nick...">
                     </div>
                     <br>
                     <div class="form-group">
@@ -79,17 +68,13 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
 
   <!-- Bootstrap core JavaScript-->
   <%@include file="../dynamic/jscrypt.jspf"%>
   <!-- Core plugin JavaScript-->
-
 <br>
 <br>
 <br>
