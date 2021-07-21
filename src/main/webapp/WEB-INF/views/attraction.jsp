@@ -82,182 +82,37 @@
         </div>
               
         <div class="row">
-          
-            <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
 
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-10">
-                    <h2 class="w-title">Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
 
+              <c:forEach items="${items}" var="item">
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href='<c:url value="/resources/assets/img/${item.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img">
+
+                      <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
                     </div>
-                  </div>
-                  <div class="col-sm-4">
+                  </a>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <h2 class="w-title">${item.name}</h2>
+                        <hr style="height: 1px; color: darkblue; background-color: black"/>
+                        <p> Opis: ${item.description}  </p>
+                        <hr style="height: 1px; color: darkblue; background-color: black"/>
+                        Cena: ${item.price}.
+                        <div class="w-more">
 
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-                <div class="col-md-4">
-            <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-
-                  <img src='<c:url value="/resources/assets/img/pexels-te-lensfix-1371360.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-10">
-                    <h2 class="w-title">Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
-
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-                
-                <div class="col-md-4">
-            <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-
-                  <img src='<c:url value="/resources/assets/img/pexels-te-lensfix-1371360.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
-
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-            <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/mapa.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
-
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                <div class="col-md-4">
-            <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/pexels-te-lensfix-1371360.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title"> Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
-
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-            <div class="col-md-4">
-            <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/work-1.jpg"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/pexels-te-lensfix-1371360.jpg"/>' alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Wycieczki jednodniowe</h2>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      <p> Opis:  </p>
-                      <hr style="height: 1px; color: darkblue; background-color: black"/>
-                      Cena: 
-                    <div class="w-more">
-
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
+              </c:forEach>
 
 
         </div>
