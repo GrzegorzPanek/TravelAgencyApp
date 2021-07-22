@@ -7,6 +7,7 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 public class UserEntity extends BaseEntity{
+    private String name;
     private String username;
     private String password;
 
@@ -16,10 +17,19 @@ public class UserEntity extends BaseEntity{
     public UserEntity(){
     }
 
-    public UserEntity(String username, String password, Set<String> role) {
+    public UserEntity(String name, String username, String password, Set<String> role) {
+        this.name=name;
         this.username = username;
         this.password = password;
         this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUsername() {

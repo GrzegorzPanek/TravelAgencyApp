@@ -48,18 +48,16 @@
               <form class="user" method="post" action='<c:url value="/register"/>'>
                 <div class="form-group ">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input name="vvid" type="text" class="form-control form-control-user" id="exampleId" placeholder="vvid">
+                    <input name="imie" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Imię">
                   </div>
+
                 </div>
                 <p>
-                <div class="form-group">
-                  <input name="version" type="text" class="form-control form-control-user" id="formExampleInput" placeholder="version">
-                </div>
-                </p> <p>
                 <div class="form-group">
                   <input name="username" type="text" class="form-control form-control-user" id="formGroupExampleInput" placeholder="Twój nick..">
                 </div>
                 </p>
+
                 <p>
                 <div class="form-group ">
                   <div class="col-sm-6 mb-3 mb-sm-0">

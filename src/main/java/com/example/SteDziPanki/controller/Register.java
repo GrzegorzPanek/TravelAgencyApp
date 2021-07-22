@@ -19,7 +19,7 @@ public class Register {
 
     @RequestMapping(value = { "/register"}, method = RequestMethod.GET)
     public String getIndex() {
-        return "register";
+        return "/register";
     }
 
 
