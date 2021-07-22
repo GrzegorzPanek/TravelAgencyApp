@@ -76,6 +76,9 @@
                     <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
                     <div class="w-more">
                       <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
+                      <td><a href='<c:url value="/editTrip/${item.id}"/>'
+                             class="btn-right btn btn-primary" role="button">Edytuj</a>
+                      </td>
                     </div>
                   </div>
                   <div class="col-sm-4">
