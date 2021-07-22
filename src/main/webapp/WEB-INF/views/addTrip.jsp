@@ -49,6 +49,9 @@
    <form name="send" method="post" action='<c:url value="/addTrip"/>'>
         <section id="about" class="about-mf sect-pt4 route">
 
+            <br>
+            <br>
+            <br>
                     <!-- Begin Page Content -->
                     <form class="container-fluid">
 

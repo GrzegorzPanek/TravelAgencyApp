@@ -48,6 +48,7 @@
    <form name="send" method="post" action='<c:url value="/addAttraction"/>'>
         <section id="about" class="about-mf sect-pt4 route">
 
+            <br>
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
 
