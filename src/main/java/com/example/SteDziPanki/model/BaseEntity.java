@@ -7,10 +7,11 @@ import java.util.UUID;
 public class BaseEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+
     private Long id;
     private String uuid = UUID.randomUUID().toString();
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Version
     private long version;
 
