@@ -16,4 +16,7 @@ public interface TripRepository extends JpaRepository<Trip, Long> {
     Trip save(Trip entity);
    List<Trip> findAll();
    Optional<Trip> findByAllInclusive(String status);
+
+    @Override
+    Trip getById(Long id);
 }
