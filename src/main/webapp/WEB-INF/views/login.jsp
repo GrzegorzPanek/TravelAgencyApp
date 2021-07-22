@@ -39,13 +39,13 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Witaj !</h1>
                   </div>
-                  <form class="user">
+                  <form class="user" method="post" action='<c:url value="/login"/>'>
                     <div class="form-group">
-                      <input type="nick" class="form-control form-control-user" id="formGroupExampleInput" placeholder="Wprowadź nick...">
+                      <input name="username" type="text" class="form-control form-control-user" id="formGroupExampleInput" placeholder="Wprowadź nick...">
                     </div>
                     <br>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Hasło">
+                      <input name="password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Hasło">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -54,9 +54,7 @@
                       </div>
                       <br>
                     </div>
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
-                      Login
-                    </a>
+                   <input class="btn btn-primary btn-user btn-block" value="login" type="submit">
                     <hr>
                   
                   </form>
