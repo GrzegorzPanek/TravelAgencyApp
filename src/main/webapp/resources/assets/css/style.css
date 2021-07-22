@@ -1669,4 +1669,43 @@ footer .credits a {
     border: medium solid black;
 }
 
+.offer-code-loaded__price {
+    text-size-adjust: 100%;
+    text-align: left;
+    color: #002d41;
+    box-sizing: inherit;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    vertical-align: initial;
+    background-color: #f2eddc;
+    padding: 14px;
 
+}
+
+
+
+.information__trip {
+    border: medium solid blue;
+}
+
+
+.mapa-location{
+    background-image: url("/BiuroPodrozy/assets/img/work-1.jpg");
+
+    margin-right: 20px;
+    margin-bottom: 5px;
+
+}
+
+.mapa-jest{
+    background-color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.hotel-picture{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
