@@ -45,6 +45,9 @@ public class Trip {
     @ManyToOne(fetch = FetchType.LAZY)
     private Airport airport;
 
+    public Trip() {
+    }
+
     public Trip(String startPlace, String destination, String tripDestination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, String promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces) {
     }
 
@@ -68,9 +71,7 @@ public class Trip {
         this.allInclusive = allInclusive;
     }
 
-    public Trip() {
 
-    }
 
     public Trip(String startPlace, String destination, Date departureDate, Date arrivalDate, Double numberOfDays, String variant, double childPrice, double adultPrice, Boolean promoted, Integer adultQuantityPlaces, Integer childrenQuantityPlaces, String picture, Boolean lastMinute, Boolean allInclusive) {
     }

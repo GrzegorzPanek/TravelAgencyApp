@@ -60,7 +60,7 @@ public class TripService {
                 .collect(Collectors.toList());
     }
 
-    public Optional<Trip> getTripsById(Long id){
-        return tripRepository.findById(id);
-    }
+
+
+
 }
