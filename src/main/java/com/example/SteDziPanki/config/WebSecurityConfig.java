@@ -43,7 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         http.authorizeRequests()
-                .antMatchers("/addAtraction","/addTrip")
+                .antMatchers("/addAttraction","/addTrip")
                 .hasAnyAuthority("ROLE_ADMIN")
                 .antMatchers("/","/index","/contact","/attraction","/trips")
                 .permitAll()
@@ -59,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/login")
                 .successForwardUrl("/index")
                 .failureForwardUrl("/login?error")
-//                .defaultSuccessUrl("/index")
+                .defaultSuccessUrl("/index")
                 .and()
                 .logout()
                 .logoutSuccessUrl("/index");
