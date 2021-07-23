@@ -58,7 +58,4 @@ public class TripService {
                 .collect(Collectors.toList());
     }
 
-
-
-
 }

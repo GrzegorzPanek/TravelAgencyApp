@@ -195,4 +195,7 @@ public class Trip {
     public void setAllInclusive(Boolean allInclusive) {
         this.allInclusive = allInclusive;
     }
+
+
+
 }
