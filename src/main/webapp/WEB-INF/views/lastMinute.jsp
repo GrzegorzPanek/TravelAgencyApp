@@ -103,7 +103,7 @@
                   <div class="row">
                     <div class="col-sm-8">
                       <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
-                      <div class="w-more">
+                      <div> <a href='<c:url value="/tripInformation/${item.id}"/>' class="w-more">
                         <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
                       </div>
                     </div>

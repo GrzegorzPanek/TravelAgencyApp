@@ -60,7 +60,7 @@
     </div>
 
     <div class="trips-list">
-      <h2>Znalezione wycieczki:</h2>
+      <h2>Dostepne wycieczki:</h2>
       <div class="row">
 
 

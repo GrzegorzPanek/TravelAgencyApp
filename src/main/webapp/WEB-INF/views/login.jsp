@@ -26,7 +26,7 @@
     <br>
     <br>
     <!-- Outer Row -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center-loginAjak">
       <div class="col-xl-12 col-lg-12 col-md-12">
 
         <div class="card o-hidden border-0 shadow-lg my-5">
