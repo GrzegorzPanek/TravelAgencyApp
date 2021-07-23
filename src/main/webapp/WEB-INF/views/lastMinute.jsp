@@ -62,7 +62,7 @@
               Wybierz się na wymarzone wakację z ofertą LAST MINUTE!
             </h4>
             <p class="subtitle-a">
-              O
+
             </p>
             <div class="line-mf"></div>
           </div>

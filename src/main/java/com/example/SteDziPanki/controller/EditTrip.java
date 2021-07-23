@@ -31,10 +31,17 @@ public class EditTrip {
         return "editTrip";
     }
 
-    // save edit person
+    // save edit Trip
     @RequestMapping(value = {"/trips/{id}"}, method = RequestMethod.POST)
     public RedirectView postEditTrip(@ModelAttribute Trip newTrip, @PathVariable("id") Long id) {
         tripRepository.save(newTrip);
+        return new RedirectView("/trips");
+    }
+
+    // delete Trip
+    @RequestMapping(value = {"/editTrip/{id}"}, method = RequestMethod.POST)
+    public RedirectView deleteTrip(@PathVariable("id") Long id) {
+        tripRepository.deleteById(id);
         return new RedirectView("/trips");
     }
 }
