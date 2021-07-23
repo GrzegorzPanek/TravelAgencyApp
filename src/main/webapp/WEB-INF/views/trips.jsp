@@ -45,7 +45,10 @@
   <main id="main" class="main">
 
     <img src='<c:url value="/resources/assets/img/pexels-pixabay-163688.jpg"/>' class="bg" alt="Best Trips in the world" />
-    <div class="search-container">
+
+    <form name="send" method="post" action='<c:url value="/addTrip"/>'>
+
+      <div class="search-container">
       <div>
         <h2 class="search-header">ODKRYWAJ ŚWIAT Z KLASĄ</h2>
         <h3 class="search-description">Najlepsze wycieczki, atrakcje i zajęcia w Twoim miejscu docelowym</h3>
@@ -74,7 +77,8 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
-                    <div class="w-more">
+
+                    <div> <a href='<c:url value="/tripInformation/${item.id}"/>' class="w-more">
                       <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
                       <sec:authorize access="hasRole('ROLE_ADMIN') ">
                         <td><a href='<c:url value="/editTrip/${item.id}"/>'

@@ -11,6 +11,8 @@ public class Login {
     public String getIndex() {
         return "/login";
     }
+
+
     @RequestMapping(value = {"/login"}, method = RequestMethod.POST)
     public String postLogin(){
         return "/login";

@@ -47,6 +47,8 @@
                         <li><a href='<c:url value="/contact"/>'>Kontakt</a></li>
                         <li><a href='<c:url value="/login"/>'>Login</a></li>
                         <li><a href='<c:url value="/register"/>'>Register</a></li>
+                        <li><a href='<c:url value="/addTrip"/>'>AddTrip</a></li>
+                        <li><a href='<c:url value="/addAttraction"/>'>AddAttraction</a></li>
 
 
                         
