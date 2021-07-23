@@ -102,10 +102,8 @@
                             <div class="row">
                                 <div class="col-sm-5">
 
-
-                                    <c:url value="/resources/assets/img/${item.picture}" />' class="portfolio-lightbox">
                                         <div class="work-img">
-                                            <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
+                                            <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' alt="" class="img-fluid">
                                         </div>
                                     </a>
                                 </div>
@@ -120,9 +118,9 @@
 
 
                                 <div class="col-sm-5 hotel-picture" >
-                                    <a href='<c:url value="/resources/assets/img/${item.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                    <a href='<c:url value="/resources/assets/img/${trip.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                                         <div class="work-img">
-                                            <img src='<c:url value="/resources/assets/img/${item.picture}"/>' width="1000"  alt="" class="img-fluid">
+                                            <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' width="1000"  alt="" class="img-fluid">
 
                                         </div>
                                     </a>
@@ -150,21 +148,20 @@
 
                             <div class="">
                                 <h3>Wybrana Oferta</h3>
-                                <li> ${item.getAdultQuantityPlaces}</li>
-                                <li> ${item.getArrivalDate} <p> to </p> ${item.getDepartureDate} </li>
-                                <li> ${item.getStartPlace}</li>
-                                <li> do : ${item.getDestination}</li>
-                                <li> wariant: ${item.getVariant} </li>
-                                <li> ${item.getAllInlusive}</li>
+                                <li> ${trip.childrenQuantityPlaces}</li>
+                                <li> ${trip.arrivalDate} do ${trip.departureDate} </li>
+                                <li> ${trip.startPlace} do ${trip.destination}</li>
+                                <li> wariant: ${trip.variant} </li>
+                                <li> <c:if test="${trip.allInclusive == true}">Z ofertą allinclusive &#x2611 </c:if> </li>
                                 <label>  </label>
                             </div>
 
                             <div class="offer-code-loaded__price"><div class="price"><div class="price__label-wrapper"><span class="price-label">
-    <div class="price-label__value">Cena za osobę: ${item.getAdultPrice}</div></span></div><div class="price__value-wrapper"><div class="price-value"><div class="price-value__amount-wrapper">
+    <div class="price-label__value">Cena za osobę: ${trip.adultPrice}</div></span></div><div class="price__value-wrapper"><div class="price-value"><div class="price-value__amount-wrapper">
                                 <span class="price-value__amount" data-testid="price-amount">4 020</span><sup class="price-value__currency">zł</sup></div></div></div></div><div class="price"><div class="price__label-wrapper"><span class="price-label"><div class="price-label__value">Cena razem:<div class="price-label__info-button"><div role="button" tabindex="0" class="info-button"><span class="bp3-popover-wrapper price-label__tooltip"><span class="bp3-popover-target"><div class="tooltip__target"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="20" height="20"><path fill="#C8B78A" d="M60 11c-27.1 0-49 21.9-49 49s21.9 49 49 49 49-21.9 49-49-21.9-49-49-49zm7.8 74.1c-2.3.9-4 1.6-5.4 2-1.5.5-3.1.7-4.7.7-2.3.2-4.6-.6-6.4-2-1.5-1.3-2.3-3.1-2.3-5.1 0-.8 0-1.6.1-2.5s.3-1.8.6-2.8l2.8-10c.2-.9.5-1.9.7-2.7.1-.8.2-1.6.2-2.3.1-1-.2-1.9-.8-2.7-.9-.6-1.9-.9-3-.7-.8 0-1.5.1-2.3.3-.7.2-1.4.4-2 .7l.7-3.1c1.9-.8 3.6-1.4 5.3-1.9 1.5-.5 3.2-.8 4.8-.8 2.3-.1 4.5.6 6.2 2 1.5 1.3 2.3 3.2 2.2 5.1 0 .8 0 1.5-.1 2.3-.1 1-.3 2-.6 3L61 74.5c-.3.9-.5 1.8-.6 2.7-.2.8-.3 1.5-.3 2.3-.1 1 .2 2 .9 2.7.9.6 2 .8 3.1.7.8 0 1.6-.1 2.3-.4l1.8-.6-.4 3.2zm-.5-40.3c-1.3 1.2-3 1.9-4.7 1.8-1.8 0-3.5-.6-4.8-1.8-1.2-1.1-2-2.7-2-4.4 0-1.7.7-3.3 2-4.4 1.3-1.2 3-1.9 4.8-1.8 1.8 0 3.5.6 4.7 1.8 1.2 1.1 2 2.7 2 4.4s-.7 3.2-2 4.4z"></path></svg></span></div></span></span></div></div></div></span></div><div class="price__value-wrapper"><div class="price-value"><div class="price-value__amount-wrapper"><span class="price-value__amount" data-testid="price-amount">8 040</span><sup class="price-value__currency">zł</sup></div></div></div></div><button class="button button--ternary button--big button--centered-icon" target="_self" type="button" rel="nofollow noopener"><span class="button__content">KUP ON-LINE</span><span class="button__icon-wrapper button__icon-wrapper--right" aria-hidden="true"><svg viewBox="0 0 120 120" class="button__icon"><path d="M17 11v98l85.8-49z"></path></svg></span></button></div>
                         </div></div>
                 </div>
-                ${item.picture}
+
 
 
                 <div class="container-fluid"> </div>

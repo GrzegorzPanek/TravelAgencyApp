@@ -24,9 +24,10 @@ public class TripInformation {
     }
 
 
-    @RequestMapping(value = { "/tripInformation/{id}"}, method = RequestMethod.GET)
+    // get Trip in tripInformation
+    @RequestMapping(value = {"/tripInformation/{id}"}, method = RequestMethod.GET)
     public String getTripInformation(Model model, @PathVariable("id") Long id) {
-       Optional<Trip> trip = tripService.getTrip(id);
+        Trip trip = tripRepository.getById(id);
         model.addAttribute("trip", trip);
         return "tripInformation";
     }
