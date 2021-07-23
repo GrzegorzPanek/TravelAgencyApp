@@ -51,7 +51,7 @@
                             Tytuł wycieczki
                         </h4>
                         <p class="subtitle-a">
-                            O
+
                         </p>
                         <div class="line-mf"></div>
                     </div>

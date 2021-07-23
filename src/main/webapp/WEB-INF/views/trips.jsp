@@ -65,7 +65,7 @@
 
 
 
-        <c:forEach items="${trip}" var="item">
+        <c:forEach items="${items}" var="item">
           <div class="col-md-2">
             <div class="work-box">
               <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
@@ -80,7 +80,12 @@
 
                     <div> <a href='<c:url value="/tripInformation/${item.id}"/>' class="w-more">
                       <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
-                    </a>
+                      <sec:authorize access="hasRole('ROLE_ADMIN') ">
+                        <td><a href='<c:url value="/editTrip/${item.id}"/>'
+                               class="btn-right btn btn-primary" role="button">Edytuj</a>
+                        </td>
+                      </sec:authorize>
+
                     </div>
                   </div>
                   <div class="col-sm-4">
