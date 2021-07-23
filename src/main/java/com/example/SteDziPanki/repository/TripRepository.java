@@ -18,5 +18,8 @@ public interface TripRepository extends JpaRepository<Trip, Long> {
    Optional<Trip> findByAllInclusive(String status);
 
     @Override
+    void deleteById(Long id);
+
+    @Override
     Trip getById(Long id);
 }

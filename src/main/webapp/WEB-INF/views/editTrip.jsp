@@ -45,6 +45,8 @@
 
 <br>
 <br>
+<br>
+<br>
 
 
                     <!-- End of Topbar -->
@@ -76,7 +78,7 @@
                                             <label  class="col-2 col-form-label">Data wyzjazdy</label>
                                             <div class="col-10">
                                                 <input class="form-control" name="departureDate" type="date" max="3000-12-31"
-                                                    min="<fmt:formatDate pattern = "yyyy-MM-dd"  value="${now}"/>">
+                                                    min="<fmt:formatDate pattern = "yyyy-MM-dd"  value="${trip.departureDate}"/>">
                                             </div>
                                         </div>
 
@@ -84,7 +86,7 @@
                                             <label  class="col-2 col-form-label">Data powrotu</label>
                                             <div class="col-10">
                                                 <input class="form-control" name="arrivalDate" type="date" max="3000-12-31"
-                                                    min="<fmt:formatDate pattern = "yyyy-MM-dd"   value="${now}"/>">
+                                                    min="<fmt:formatDate pattern = "yyyy-MM-dd"   value="${trip.arrivalDate}"/>">
                                             </div>
                                         </div>
 
@@ -177,39 +179,11 @@
 
                         </div>
                         <input class="btn btn-success pull-left" type="submit" value="Zapisz zmiany" id="searchButton"></input>
-
-                    <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
-                        Usuń
-                    </button>
-
-                    <!-- The Modal -->
-                    <div class="modal" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Czy na pewno chcesz usunąć osobę ?</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    Jeżeli usuniesz to już nie będzie odwrotu
-                                </div>
-
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
-                                    <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
+            </form>
+                    <!-- Button delete -->
+                <form name="delete" method="post" action='<c:url value="/editTrip/${trip.id}"/>'>
+                    <input class="btn btn-danger" value="Usuń" type="submit">
+                </form>
 
 
 
@@ -252,7 +226,7 @@
             </div>
         </div>
     </div>
-   </form>
+
     <!-- Bootstrap core JavaScript-->
    <%@include file="../dynamic/jscrypt.jspf"%>
 

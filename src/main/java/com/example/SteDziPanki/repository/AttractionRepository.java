@@ -12,4 +12,9 @@ public interface AttractionRepository extends JpaRepository<Attraction, Long> {
     Attraction save(Attraction entity);
     List<Attraction> findAll();
 
+    @Override
+    void deleteById(Long id);
+
+    @Override
+    Attraction getById(Long id);
 }

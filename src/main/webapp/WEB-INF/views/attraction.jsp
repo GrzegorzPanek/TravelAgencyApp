@@ -102,7 +102,9 @@
                         <hr style="height: 1px; color: darkblue; background-color: black"/>
                         Cena: ${item.price}.
                         <div class="w-more">
-
+                          <td><a href='<c:url value="/editAttraction/${item.id}"/>'
+                                 class="btn-right btn btn-primary" role="button">Edytuj</a>
+                          </td>
                         </div>
                       </div>
                       <div class="col-sm-4">
