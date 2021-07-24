@@ -84,26 +84,26 @@
         <div class="row">
 
 
-              <c:forEach items="${items}" var="item">
+              <c:forEach items="${items}" var="trip">
               <div class="col-md-4">
                 <div class="work-box">
-                  <a href='<c:url value="/resources/assets/img/${item.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <a href='<c:url value="/resources/assets/img/${trip.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <div class="work-img">
 
-                      <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
+                      <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' alt="" class="img-fluid">
                     </div>
                   </a>
                   <div class="work-content">
                     <div class="row">
                       <div class="col-sm-10">
-                        <h2 class="w-title">${item.name}</h2>
+                        <h2 class="w-title">${trip.name}</h2>
                         <hr style="height: 1px; color: darkblue; background-color: black"/>
-                        <p> Opis: ${item.description}  </p>
+                        <p> Opis: ${trip.description}  </p>
                         <hr style="height: 1px; color: darkblue; background-color: black"/>
-                        Cena: ${item.price}.
+                        Cena: ${trip.price}.
                         <div class="w-more">
                           <sec:authorize access="hasRole('ROLE_ADMIN') ">
-                            <td><a href='<c:url value="/editAttraction/${item.id}"/>'
+                            <td><a href='<c:url value="/editAttraction/${trip.id}"/>'
                                    class="btn-right btn btn-primary" role="button">Edytuj</a>
                             </td>
                           </sec:authorize>

@@ -78,7 +78,7 @@
 
                                               <div class="col-2">
                                                 <div class="row">
-                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Typ wyjazdu</p>                  </label>
+                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Gdzie?</p>                  </label>
 
                                                 <select name="wybór" style="width: 150px">
 
@@ -95,7 +95,7 @@
 
                             <div class="col-2">
                                                 <div class="row">
-                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Lotnisko</p>                  </label>
+                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Dokąd?</p>                  </label>
 
                                                 <select name="wybór" style="width: 150px">
 
@@ -111,7 +111,7 @@
 
                                            <div class="col-2">
                                                 <div class="row">
-                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Kierunki</p>                  </label>
+                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Ile osób?</p>                  </label>
 
                                                 <select name="wybór" style="width: 150px">
 
@@ -144,7 +144,7 @@
 
                                             <div class="col-2">
                                                 <div class="row">
-                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Wylot od do</p>                  </label>
+                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Kiedy?</p>                  </label>
 
                                                 <select name="wybór" style="width: 150px">
 
@@ -159,13 +159,13 @@
 
                                         <div class="col-2">
                                                 <div class="row">
-                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Uczestnicy</p>                  </label>
+                                                <label for="1" class="col-form-label"> <p style="color: aliceblue">Allinclusive?</p>                  </label>
 
                                                 <select name="wybór" style="width: 150px">
 
-  <option>Opcja 1</option>
-  <option>Opcja 2</option>
-  <option>Opcja 3</option>
+  <option>Nie</option>
+  <option>Tak</option>
+
 
 </select>
                                                     <p></p>

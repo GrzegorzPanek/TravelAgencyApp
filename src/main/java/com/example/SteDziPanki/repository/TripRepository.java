@@ -21,4 +21,8 @@ public interface TripRepository extends JpaRepository<Trip, Long> {
 
     @Override
     Trip getById(Long id);
+    String getByDestination(String destination);
+
+
+
 }

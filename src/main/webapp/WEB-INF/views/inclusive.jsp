@@ -81,18 +81,18 @@
 
 
 
-        <c:forEach items="${items}" var="item">
+        <c:forEach items="${items}" var="trip">
           <div class="col-md-2">
             <div class="work-box">
-              <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
+              <a href='<c:url value="/resources/assets/img/${trip.picture}"/>' >
                 <div class="work-img">
-                  <img src='<c:url value="/resources/assets/img/${item.picture}"/>' alt="" class="img-fluid">
+                  <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
+                    <h2 class="w-title2">${trip.startPlace}-${trip.destination}</h2>
                     <div> <a href='<c:url value="/tripInformation/${item.id}"/>' class="w-more">
                       <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
                     </div>
