@@ -100,13 +100,6 @@
 
 
                             <div class="row">
-                                <div class="col-sm-5">
-
-                                        <div class="work-img">
-                                            <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' alt="" class="img-fluid">
-                                        </div>
-                                    </a>
-                                </div>
 
 
 
