@@ -85,7 +85,7 @@
 
 
               <c:forEach items="${items}" var="item">
-              <div class="col-md-4">
+              <div class="col-md-2">
                 <div class="work-box">
                   <a href='<c:url value="/resources/assets/img/${item.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                     <div class="work-img">
@@ -95,7 +95,7 @@
                   </a>
                   <div class="work-content">
                     <div class="row">
-                      <div class="col-sm-10">
+                      <div class="col-sm-8">
                         <h2 class="w-title">${item.name}</h2>
                         <hr style="height: 1px; color: darkblue; background-color: black"/>
                         <p> Opis: ${item.description}  </p>
