@@ -59,6 +59,7 @@
       </div>
     </div>
 
+    <section id="work" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
 
@@ -117,7 +118,7 @@
     </div>
     </div>
   </main>
-
+  </section>
   <!-- ======= Footer ======= -->
 
   <%@include file="../dynamic/footer.jspf"%>
