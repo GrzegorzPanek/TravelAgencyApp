@@ -94,8 +94,8 @@
                       <div class="col-sm-8">
                         <h2 class="w-title2">${item.startPlace}-${item.destination}</h2>
 
-                          <div> <a href='<c:url value="/tripInformation/${item.id}"/>' class="w-more"> </a>
-                          <button type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</button>
+                          <div> <a href='<c:url value="/tripInformation/${item.id}"/>'
+                           type="button" class="hotel-element__action-button__see_offer">Zobacz szczegóły oferty</a>
                           <sec:authorize access="hasRole('ROLE_ADMIN') ">
                           <td><a href='<c:url value="/editTrip/${item.id}"/>'
                                  class="btn-right btn btn-primary" role="button">Edytuj</a>
