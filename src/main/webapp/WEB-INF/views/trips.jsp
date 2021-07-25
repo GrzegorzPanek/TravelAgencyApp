@@ -59,13 +59,28 @@
       </div>
     </div>
 
-    <div class="trips-list">
-      <h2>Dostepne wycieczki:</h2>
+    <div class="container">
       <div class="row">
 
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h4 class="title-z">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Wybrane Wycieczki:
+                </h3>
+                <p class="subtitle-a">
+
+                </p>
+                <div class="line-mf"></div>
+              </div>
+            </h4>
+          </div>
+
+          <div class="row">
 
 
-        <c:forEach items="${items}" var="item">
+          <c:forEach items="${items}" var="item">
           <div class="col-md-2">
             <div class="work-box">
               <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
@@ -99,6 +114,7 @@
       </div>
       </div>
 
+    </div>
     </div>
   </main>
 
