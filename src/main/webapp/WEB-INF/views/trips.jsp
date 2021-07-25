@@ -46,7 +46,7 @@
 
     <img src='<c:url value="/resources/assets/img/pexels-pixabay-163688.jpg"/>' class="bg" alt="Best Trips in the world" />
 
-    <form name="send" method="post" action='<c:url value="/addTrip"/>'>
+
 
       <div class="search-container">
       <div>

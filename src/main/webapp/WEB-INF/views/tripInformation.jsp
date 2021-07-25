@@ -108,13 +108,6 @@
                                     </a>
                                 </div>
 
-                                <div class="col-sm-4 hotel-element__data">
-                                    <h3>Szczegóły </h3>
-                                    <p class="data__localization">Turcja / Riwiera Turecka / Konakli</p>
-                                    <p class="data data__date">20.10.2021 - 27.10.2021 (7 noclegów)</p>
-                                    <p class="data">All Inclusive</p>
-                                    <p class="data data__info">strefa spa z saunami i łaźnią turecką</p>
-                                </div>
 
 
                                 <div class="col-sm-5 hotel-picture" >
@@ -127,7 +120,7 @@
                                 </div>
 
                                 <div class="col-sm-6 hotel-element__data hotel-picture">
-                                    <h3>Titan Select - Informacje</h3>
+                                    <h3>Informacje</h3>
 
                                     <p>Konakli atlantic blue to świetny wybór dla wszystkich osób spragnionych wypoczynku w ciepłych promieniach wakacyjnego słońca. Na terenie obiektu znajduje się aż 7 basenów, w tym 1 kryty. Dla dzieci przygotowano szereg atrakcji takich jak miniklub czy plac zabaw, natomiast dorośli mogą relaksować się przy muzyce na żywo. Pokoje są przestronne i komfortowo wyposażone, niektóre mają bezpośredni dostęp do basenu. </p>
                                     <p> </p>

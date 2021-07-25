@@ -138,7 +138,7 @@
 
 
             <!-- Footer -->
-   <%@include file="../dynamic/footer.jspf"%>
+
             <!-- End of Footer -->
 
         
