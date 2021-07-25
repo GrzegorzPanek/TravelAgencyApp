@@ -103,7 +103,7 @@
 
 
 
-                                <div class="col-sm-5 hotel-picture" >
+                                <div class="col-sm-6 hotel-picture" >
                                     <a href='<c:url value="/resources/assets/img/${trip.picture}"/>' data-gallery="portfolioGallery" class="portfolio-lightbox">
                                         <div class="work-img">
                                             <img src='<c:url value="/resources/assets/img/${trip.picture}"/>' width="1000"  alt="" class="img-fluid">
@@ -139,7 +139,7 @@
                                 <li> Pobyt od: ${trip.arrivalDate} do ${trip.departureDate} </li>
                                 <li> Z: ${trip.startPlace} do ${trip.destination}</li>
                                 <li> wariant: ${trip.variant} </li>
-                                <li> <c:if test="${trip.allInclusive == true}">Z ofertą allinclusive &#x2611 </c:if> </li>
+                                <c:if test="${trip.allInclusive == true}">  <li> Z ofertą allinclusive &#x2611 </li> </c:if>
                                 <label>  </label>
                             </div>
 
