@@ -81,7 +81,7 @@
 
 
           <c:forEach items="${items}" var="item">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <div class="work-box">
               <a href='<c:url value="/resources/assets/img/${item.picture}"/>' >
                 <div class="work-img">
